@@ -1,4 +1,4 @@
-# AZURE HONEYPOT: Similuating Live Cyber Attack
+# AZURE HONEYNET: Simulating Live Cyber Attack
 
 ![SOC](https://github.com/efeojar/soc-project/assets/66268247/f0d2785d-bdf2-4b95-acac-3ba214a2fe97)
 ## Introduction
@@ -9,7 +9,7 @@ For this project, I built a mini honeynet in Azure and ingest log sources from v
 * SecurityIncident (Incidents created by Sentinel)
 * AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 ## Objective
-The objective of this project is to create a honeynet that will allow me analyze live attacks, conduct incident response and investigate logs and understand the attacker's intentions, tactics, techniques and procedures. Also to learn how to secure an environment that is insecure by changing the Firewall rules, implementing Azure Private Links, and administering regulatory compliance i.e. NIST 800-53, and Microsoft Defender for Cloud recommendations.
+The objective of this project is to create a honeynet that will allow me to analyze live attacks, conduct incident response and investigate logs and understand the attacker's intentions, tactics, techniques, and procedures. Also to learn how to secure an environment that is insecure by changing the Firewall rules, implementing Azure Private Links, and administering regulatory compliance i.e. NIST 800-53, and Microsoft Defender for Cloud recommendations.
 The architecture of the mini honeynet in Azure consists of the following components:
 * Virtual Network (VNet)
 * Network Security Group (NSG)
@@ -26,7 +26,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 
 ![Unsecure connection](https://github.com/efeojar/soc-project/assets/66268247/03ff90e3-0055-48ee-93fd-e9dcd35abdeb)
 
-In the "BEFORE" stage, all resources were initially deployed with public exposure to the internet. This setup was intentionally insecure to attract attackers and observe their tactics. Both the machines, their Network Security Groups (NSGs) and built-in firewalls were left open, allowing unrestricted access from any source. Additionally, all other resources, such as storage accounts and databases, were deployed with public endpoints visible to the internet, without utilizing any Private Endpoints for added security.
+In the "BEFORE" stage, all resources were initially deployed with public exposure to the Internet. This setup was intentionally insecure to attract attackers and observe their tactics. Both the machines, their Network Security Groups (NSGs), and built-in firewalls were left open, allowing unrestricted access from any source. Additionally, all other resources, such as storage accounts and databases, were deployed with public endpoints visible to the internet, without utilizing any Private Endpoints for added security.
 ## Attack Maps Before Hardening / Security Controls
 ## Windows-MSSQL-auth-fail
 <img width="1312" alt="Unsecured - mssql-auth-fail" src="https://github.com/efeojar/soc-project/assets/66268247/b7427530-ea4f-4593-b967-6a1a11fb4a8d">
